@@ -22,7 +22,16 @@ Ecasound - `http://nosignal.fi/ecasound/download.php` <-- configure source with 
 Audacity - `sudo apt-get install audacity`
 
 Tap-Plugins - `sudo apt-get install tap-plugins`
- 
+
+A webcam - `Walmart`
  
 You may need to move some ladspa plugins from `/usr/lib/ladspa` to `/usr/local/lib/ladspa` or vice versa.
 Then in a terminal enter `echo "ladspa-register" | ecasound -c` to make sure ecasound picks up your plugins.
+
+If you don't have a webcam well its pretty ez to edit the source for an input file :>
+
+# Tips & Tricks
+
+Due to some weird bash bug FFmeg likes to hang sometimes. Have `killall -s SIGKILL ffmpeg` ready lol.
+
+Some colorspaces require specific sample rates and audio formats like 16bit or 32bit to not be slow asf (e.g `ffmpeg -i blah -f u16le`)
