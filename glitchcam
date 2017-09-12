@@ -197,8 +197,6 @@ mkfifo fifo1
 mkfifo fifo2
 mkfifo fifo3
 mkfifo fifo4
-
-mkfifo fifo1
 wait
 
 ffmpeg -loglevel quiet -r 25 -f v4l2 -framerate 25 -video_size 1024x576 -i /dev/video0 -f rawvideo -vcodec rawvideo -s $1 -pix_fmt $2 -r 25 - |
