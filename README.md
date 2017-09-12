@@ -1,3 +1,25 @@
-# gLiTcHcAm
-𝚁𝚎𝚊𝚕-𝚃𝚒𝚖𝚎 𝚆𝚎𝚋𝚌𝚊𝚖/𝚅𝚒𝚍𝚎𝚘𝚜𝚝𝚛𝚎𝚊𝚖 𝙼𝚞𝚕𝚝𝚒-𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝚂𝚘𝚗𝚒𝚏𝚒𝚌𝚊𝚝𝚒𝚘𝚗 𝚟𝚒𝚊 
-𝙼𝚒𝚍𝚒 𝙲𝙲 𝙵𝙵𝚖𝚙𝚎𝚐, 𝙴𝚌𝚊𝚜𝚘𝚞𝚗𝚍, 𝙻𝙰𝙳𝚂𝙿𝙰 𝚙𝚕𝚞𝚐𝚒𝚗𝚜, 𝚁𝚘𝚜𝚎𝚐𝚊𝚛𝚍𝚎𝚗 𝚊𝚗𝚍 𝙵𝙵𝚙𝚕𝚊𝚢
+Sonify raw video data using Midi CCs and multichannel processing with Ecasound & FFmpeg :^)
+
+# Usage
+Syntax: ./glitchcam WIDTHxHEIGTH colorspace audiosamplerate ffaudioformat ecaaudioformat fx1=0 fx2=0
+
+e.g. `./glitchcam 640x360 xyz12le 44100 mulaw 16 fx1=17 fx2=36`
+
+# Requirments
+
+v4l-utils - `sudo apt-get install v4l-utils`
+
+ffmpeg - `sudo apt-get install ffmpeg`
+
+rosegarden - `sudo apt-get install rosegarden`
+
+ladspa-sdk - `sudo apt-get install ladspa-sdk` <-- ladspa header file thing needed for ecasound to be ladspa compatible
+
+Alsa Lib shared library - `sudo apt-get install libasound2`<-- I needed this to make eca work with my Alsa Sequencer.
+
+ecasound - `http://nosignal.fi/ecasound/download.php` <-- configure source with `./configure --enable-shared --enable-alsa -enable-ladspa`
+
+audacity - `sudo apt-get install audacity`
+
+tap-plugins - `sudo apt-get install tap-plugins`
+ 
