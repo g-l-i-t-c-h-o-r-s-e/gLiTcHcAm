@@ -25,6 +25,8 @@ Tap-Plugins - `sudo apt-get install tap-plugins`
 
 A webcam - `Walmart`
  
+Also `chmod +x glitchcam` to make the file executable.
+
 You may need to move some ladspa plugins from `/usr/lib/ladspa` to `/usr/local/lib/ladspa` or vice versa.
 Then in a terminal enter `echo "ladspa-register" | ecasound -c` to make sure ecasound picks up your plugins.
 
