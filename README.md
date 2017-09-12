@@ -7,6 +7,8 @@ e.g. `./glitchcam 640x360 xyz12le 44100 mulaw 16 fx1=17 fx2=36`
 
 # Requirments
 
+Ubuntu `lol`
+
 v4l-utils - `sudo apt-get install v4l-utils`
 
 FFmpeg - `sudo apt-get install ffmpeg`
