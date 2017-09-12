@@ -205,6 +205,7 @@ ecasound -a:1,2 -f:$5,1,$3  -i:stdin -Md:alsaseq,14:0 \
  	    -a:1 -f:$5,1,$3 -o:typeselect,raw,fifo1,raw ${c[$fx1]} \
             -a:2 -f:$5,1,$3 -o:typeselect,raw,fifo2,raw ${d[$fx2]} |
 
+#try using the amerge filter if you're using more than two channels in ecasound
 ffmpeg -loglevel quiet -f $4 -ar $3 -ac 1 -i fifo2 -f $4 -ar $3 -ac 1 -i fifo1 -filter_complex "[0:a][1:a]amix" -f $4 -ar $3 -ac 1 pipe:1 > fifo4 |
 
 ffplay -f rawvideo -vcodec rawvideo -pix_fmt $2 -s $1 -i fifo4 -loglevel quiet
