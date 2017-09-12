@@ -17,7 +17,7 @@ ladspa-sdk - `sudo apt-get install ladspa-sdk` <-- ladspa header file thing need
 
 Alsa Lib shared library - `sudo apt-get install libasound2`<-- I needed this to make eca work with my Alsa Sequencer.
 
-Ecasound - `http://nosignal.fi/ecasound/download.php` <-- configure source with `./configure --enable-shared --enable-alsa -enable-ladspa`
+[Ecasound]( http://nosignal.fi/ecasound/download.php) <-- configure source with `./configure --enable-shared --enable-alsa -enable-ladspa`
 
 Audacity - `sudo apt-get install audacity`
 
