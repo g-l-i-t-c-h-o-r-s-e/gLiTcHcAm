@@ -11,7 +11,7 @@ v4l-utils - `sudo apt-get install v4l-utils`
 
 FFmpeg - `sudo apt-get install ffmpeg`
 
-Rosegarden - `sudo apt-get install rosegarden`
+Rosegarden - `sudo apt-get install rosegarden`<-- Set Rosegarden MIDI out to 14:0 and use the Midi Mixer
 
 ladspa-sdk - `sudo apt-get install ladspa-sdk` <-- ladspa header file thing needed for ecasound to be ladspa compatible
 
